@@ -42,18 +42,18 @@ public class UserController {
     public void LoginButtonOnAction(ActionEvent event) throws IOException {
         if (UserName.getText().isBlank() == false && Password.getText().isBlank() == false) {
             if (UserRepository.Login(UserName.getText(), Password.getText())) {
-//                Stage stage = (Stage) LoginButton.getScene().getWindow();
-//
-//                FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainView.fxml"));
-//                Scene scene = new Scene(fxmlLoader.load());
-//
-//                stage.setTitle("Quản lý khu phố");
-//                stage.setScene(scene);
-//                stage.setWidth(1400);
-//                stage.setHeight(780);
-//                stage.setX(10);
-//                stage.setY(10);
-//                stage.show();
+                Stage stage = (Stage) LoginButton.getScene().getWindow();
+
+                FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("MainView.fxml"));
+                Scene scene = new Scene(fxmlLoader.load());
+
+                stage.setTitle("Quản lý khu phố");
+                stage.setScene(scene);
+                stage.setWidth(1400);
+                stage.setHeight(780);
+                stage.setX(10);
+                stage.setY(10);
+                stage.show();
             } else {
                 ThatbaiMessage.setText(Message.LoginFailed);
             }
