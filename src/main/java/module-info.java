@@ -12,16 +12,16 @@ module com.example.nmcnpm20221nhom8 {
     exports view;
     exports controller;
     exports entity;
-//    exports controller.ThongKe;
-//    opens controller.ThongKe to javafx.fxml;
+    exports controller.ThongKe;
+    opens controller.ThongKe to javafx.fxml;
     exports controller.NhanKhau;
     opens controller.NhanKhau to javafx.fxml;
     exports controller.HoKhau;
     opens controller.HoKhau to javafx.fxml;
     exports controller.KhaiBao;
     opens controller.KhaiBao to javafx.fxml;
-//    exports controller.TestCovid;
-//    opens controller.TestCovid to javafx.fxml;
+    exports controller.TestCovid;
+    opens controller.TestCovid to javafx.fxml;
     exports controller.CachLy;
     opens controller.CachLy to javafx.fxml;
 }

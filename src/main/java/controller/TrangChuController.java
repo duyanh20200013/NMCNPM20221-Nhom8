@@ -33,7 +33,7 @@ public class TrangChuController implements Initializable {
     NhanKhauRepository nhanKhauRepository = new NhanKhauRepositoryImpl();
     HoKhauRepository hoKhauRepository = new HoKhauRepositoryImpl();
     KhaiBaoRepository khaiBaoRepository = new KhaiBaoRepositoryImpl();
-//    TestCovidRepository testCovidRepository = new TestCovidRepositoryImpl();
+    TestCovidRepository testCovidRepository = new TestCovidRepositoryImpl();
     CachLyRepository cachLyRepository = new CachLyRepositoryImpl();
 
     @Override
@@ -43,7 +43,7 @@ public class TrangChuController implements Initializable {
         tongNhanKhauTamVang.setText(String.valueOf(nhanKhauRepository.tongNhanKhauTamVang()));
         tongHoKhauThuongTru.setText(String.valueOf(hoKhauRepository.tongHoKhau()));
         tongKhaiBaoYTe.setText(String.valueOf(khaiBaoRepository.tongKhaiBao()));
-//        tongTest.setText(String.valueOf(testCovidRepository.tongTest()));
+        tongTest.setText(String.valueOf(testCovidRepository.tongTest()));
         tongCachLy.setText(String.valueOf(cachLyRepository.tongCachLy()));
     }
 }
