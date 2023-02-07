@@ -30,20 +30,20 @@ public class TrangChuController implements Initializable {
     @FXML
     private Label tongKhaiBaoYTe;
 //
-//    NhanKhauRepository nhanKhauRepository = new NhanKhauRepositoryImpl();
+    NhanKhauRepository nhanKhauRepository = new NhanKhauRepositoryImpl();
     HoKhauRepository hoKhauRepository = new HoKhauRepositoryImpl();
-//    KhaiBaoRepository khaiBaoRepository = new KhaiBaoRepositoryImpl();
+    KhaiBaoRepository khaiBaoRepository = new KhaiBaoRepositoryImpl();
 //    TestCovidRepository testCovidRepository = new TestCovidRepositoryImpl();
-//    CachLyRepository cachLyRepository = new CachLyRepositoryImpl();
+    CachLyRepository cachLyRepository = new CachLyRepositoryImpl();
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-//        tongNhanKhauThuongTru.setText(String.valueOf(nhanKhauRepository.tongNhanKhauThuongTru()));
-//        tongNhanKhauTamTru.setText(String.valueOf(nhanKhauRepository.tongNhanKhauTamTru()));
-//        tongNhanKhauTamVang.setText(String.valueOf(nhanKhauRepository.tongNhanKhauTamVang()));
+        tongNhanKhauThuongTru.setText(String.valueOf(nhanKhauRepository.tongNhanKhauThuongTru()));
+        tongNhanKhauTamTru.setText(String.valueOf(nhanKhauRepository.tongNhanKhauTamTru()));
+        tongNhanKhauTamVang.setText(String.valueOf(nhanKhauRepository.tongNhanKhauTamVang()));
         tongHoKhauThuongTru.setText(String.valueOf(hoKhauRepository.tongHoKhau()));
-//        tongKhaiBaoYTe.setText(String.valueOf(khaiBaoRepository.tongKhaiBao()));
+        tongKhaiBaoYTe.setText(String.valueOf(khaiBaoRepository.tongKhaiBao()));
 //        tongTest.setText(String.valueOf(testCovidRepository.tongTest()));
-//        tongCachLy.setText(String.valueOf(cachLyRepository.tongCachLy()));
+        tongCachLy.setText(String.valueOf(cachLyRepository.tongCachLy()));
     }
 }
